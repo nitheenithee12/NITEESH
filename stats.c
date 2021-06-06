@@ -42,7 +42,7 @@ void main() {
   
 
 }
-
+//he mian thing happens here.
 void print_stats(unsigned char array[], unsigned int len)
 {
 
@@ -59,6 +59,8 @@ void print_stats(unsigned char array[], unsigned int len)
 	printf("The min is: %d\n",min_func(array,len));
 }
 
+
+//function to print array
 void print_array(unsigned char array[], unsigned int length){
 	for(int i = 0; i < length/8; i++){
 		for(int j = 0; j < length/5; j++){
@@ -71,10 +73,12 @@ void print_array(unsigned char array[], unsigned int length){
 	return;
 }
 
+//function for median
+
 unsigned char median_func(unsigned char array[], unsigned int len){
 	return array[(len-1)/2];
 }
-
+//function for mean
 unsigned char mean_func(unsigned char array[], unsigned int len){
 	unsigned int sum = 0;
 	for(int i = 0; i < len; i++){
@@ -84,13 +88,20 @@ unsigned char mean_func(unsigned char array[], unsigned int len){
 	return (unsigned char)( sum / len );
 }
 
+//function for max
+
 unsigned char max_func(unsigned char array[], unsigned int len){
 	return array[len-1];
 }
+//function for min
+
 
 unsigned char min_func(unsigned char array[], unsigned int len){
 	return array[0];
 }
+
+
+//fucntion for sorting array.
 
 void sort_array(unsigned char array[], unsigned int len){
 	unsigned char tmp;
