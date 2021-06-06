@@ -19,7 +19,7 @@
  *
  */
 
-
+/*This help us to get the detailed understanding about some of the *statistics function and allow us to learn in-detail about the compiler *and debugger.*/
 
 #include <stdio.h>
 #include "stats.h"
